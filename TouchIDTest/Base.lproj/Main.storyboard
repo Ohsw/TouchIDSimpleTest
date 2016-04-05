@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="p9A-t0-xxV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Sample Project-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeView" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oW0-5x-2za">
+                                <rect key="frame" x="179" y="221" width="242" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="4Za-mx-ihk"/>
+                                    <constraint firstAttribute="height" constant="50" id="Y7i-mt-omW"/>
+                                </constraints>
+                                <state key="normal" title="Touch ID Check Enable">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkEnableTouchID:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yY5-z0-ULy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2s2-Ls-EnD">
+                                <rect key="frame" x="179" y="293" width="242" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="ObD-Dn-JPC"/>
+                                    <constraint firstAttribute="height" constant="50" id="oFk-7t-sWx"/>
+                                </constraints>
+                                <state key="normal" title="Authetication">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="authentication:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pnb-h3-yJt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vfb-Et-7bd">
+                                <rect key="frame" x="179" y="365" width="242" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="exa-AU-YcD"/>
+                                    <constraint firstAttribute="width" constant="242" id="g1B-pT-36b"/>
+                                </constraints>
+                                <state key="normal" title="       Authetication (CustomFallbackTitle)">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="authenticationWithCustomFallbackTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3RK-K2-dTl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oW0-5x-2za" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-54" id="CqE-Wz-ZIh"/>
+                            <constraint firstItem="Vfb-Et-7bd" firstAttribute="top" secondItem="2s2-Ls-EnD" secondAttribute="bottom" constant="22" id="DTa-tR-TVG"/>
+                            <constraint firstItem="2s2-Ls-EnD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-10" id="EHl-fy-K5L"/>
+                            <constraint firstItem="2s2-Ls-EnD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-10" id="JUd-kT-QIm"/>
+                            <constraint firstItem="Vfb-Et-7bd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nhe-3s-hll"/>
+                            <constraint firstItem="2s2-Ls-EnD" firstAttribute="top" secondItem="oW0-5x-2za" secondAttribute="bottom" constant="22" id="NlM-LK-a2K"/>
+                            <constraint firstItem="oW0-5x-2za" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-10" id="VeB-Ho-er9"/>
+                            <constraint firstItem="oW0-5x-2za" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-10" id="b3z-Ld-zng"/>
+                            <constraint firstItem="Vfb-Et-7bd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-10" id="iEH-gU-xmO"/>
+                            <constraint firstItem="oW0-5x-2za" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kt4-VR-MzL"/>
+                            <constraint firstItem="Vfb-Et-7bd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v5M-f3-wND"/>
+                            <constraint firstItem="2s2-Ls-EnD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vpl-45-v1V"/>
+                            <constraint firstItem="Vfb-Et-7bd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-10" id="yUa-6w-SW0"/>
+                            <constraint firstItem="Vfb-Et-7bd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-10" id="yml-rD-ENI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VeB-Ho-er9"/>
+                                <exclude reference="b3z-Ld-zng"/>
+                                <exclude reference="EHl-fy-K5L"/>
+                                <exclude reference="JUd-kT-QIm"/>
+                                <exclude reference="iEH-gU-xmO"/>
+                                <exclude reference="yUa-6w-SW0"/>
+                                <exclude reference="yml-rD-ENI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sample Project" id="mT1-h0-OeV"/>
+                    <connections>
+                        <outlet property="touchIDAuthenticationButton" destination="2s2-Ls-EnD" id="cwN-dg-fGe"/>
+                        <outlet property="touchIDAuthenticationCustomButton" destination="Vfb-Et-7bd" id="jYu-Dj-g6E"/>
+                        <outlet property="touchIDAvailableCheckButton" destination="oW0-5x-2za" id="Ycc-nc-w3d"/>
+                        <segue destination="zQb-Pw-89w" kind="show" identifier="TouchIDSuccessSeque" id="pss-vh-NPI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517" y="357"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yk1-HF-4pA">
+            <objects>
+                <navigationController id="p9A-t0-xxV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4V8-ma-I1L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.3907301248692665" green="0.82723647287258162" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2hU-Jh-EYf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wX8-gF-gw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-195" y="357"/>
+        </scene>
+        <!--Success View Controller-->
+        <scene sceneID="1AD-rs-KtY">
+            <objects>
+                <viewController storyboardIdentifier="SuccessView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zQb-Pw-89w" customClass="SuccessViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EWk-JV-hT1"/>
+                        <viewControllerLayoutGuide type="bottom" id="cuK-Gq-1tT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="TouchIDSuccesView" id="NBG-Cm-TVo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TouchID Login Success" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyL-Jr-UDE">
+                                <rect key="frame" x="211" y="290" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="wyL-Jr-UDE" firstAttribute="centerX" secondItem="NBG-Cm-TVo" secondAttribute="centerX" id="dzC-bm-vOn"/>
+                            <constraint firstItem="wyL-Jr-UDE" firstAttribute="centerY" secondItem="NBG-Cm-TVo" secondAttribute="centerY" id="vRX-Pj-87e"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="tL1-cH-P1E" appends="YES" id="7mP-9C-mWp"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <tapGestureRecognizer id="tL1-cH-P1E">
+                    <connections>
+                        <action selector="handleTapGesture:" destination="zQb-Pw-89w" id="7Kg-7N-LmC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxZ-5S-8Es" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="357"/>
+        </scene>
+    </scenes>
+</document>
